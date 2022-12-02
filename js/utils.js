@@ -15,14 +15,3 @@ var utils = (function ($) {
   }
   return { createNodes: createNodes, isMobile: isMobile };
 })(jQuery);
-
-var GodTouch = (function ($) {
-  var touch = $('#touch');
-  $(window).scroll(() => {
-    if (window.scrollY > 2200) {
-      touch.show();
-    } else {
-      touch.hide();
-    }
-  });
-})(jQuery);
